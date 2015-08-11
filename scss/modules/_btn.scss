@@ -1,0 +1,12 @@
+.u-btnGold{
+	background-color: #d3b468; //middleGold
+	padding: 10px 20px;
+	color: white;
+	border: none;
+	border-radius: 2em;
+	text-transform: uppercase;
+
+	&:hover{
+		background-color: #b59544; //goldDark
+	}
+}

@@ -1,41 +1,8 @@
-@charset "UTF-8";
-/*
- * SCSS for Gen Kreativo - BNS project
- * Author : Silvana Ramírez (silvana.ramirez85@gmail.com)
- */
-/*
-Base imported to layout
-*/
-/* Modules */
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,300);
-.u-btnGold {
-  background-color: #d3b468;
-  padding: 10px 20px;
-  color: white;
-  border: none;
-  border-radius: 2em;
-  text-transform: uppercase; }
-  .u-btnGold:hover {
-    background-color: #b59544; }
-
-.u-inputDark {
-  background-color: rgba(0, 0, 0, 0.4);
-  border: none;
-  padding: 10px;
-  border-radius: 2em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  font-size: 0.9em;
-  margin: 10px 0; }
-  .u-inputDark:focus {
-    border: 1px solid #d3b468;
-    outline: 0; }
-
 /* ===========================
    Base
    =========================== */
 /*GENERAL FONTS*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,300);
 html {
   height: 100%;
   width: 100%; }
@@ -312,4 +279,4 @@ ul {
       .log .login-help a:hover {
         color: white; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=layout.css.map */

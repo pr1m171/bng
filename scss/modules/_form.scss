@@ -1,0 +1,16 @@
+.u-inputDark{
+	background-color: rgba(0,0,0,0.4);
+	border: none;
+	padding: 10px;
+	border-radius: 2em;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.6);
+	text-align: center;
+	font-size: 0.9em;
+	margin: 10px 0;
+
+	&:focus{
+		border: 1px solid #d3b468;
+		outline: 0;
+	}
+}
