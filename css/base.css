@@ -41,6 +41,13 @@ ul {
   color: #b59544;
   font-weight: bold; }
 
+.u-textBlue {
+  color: #2a3b4f;
+  font-weight: bold; }
+
+.u-textGsoft {
+  color: #cccccc; }
+
 .u-linkWhite {
   color: white; }
   .u-linkWhite:hover {
@@ -50,5 +57,25 @@ ul {
   color: #2a3b4f; }
   .u-linkBlue:hover {
     color: #bbccf1; }
+
+.u-dot {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 50%; }
+
+.u-dotOrg {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-color: #aa6400;
+  border-radius: 50%;
+  vertical-align: middle;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-top: 5px; }
 
 /*# sourceMappingURL=base.css.map */

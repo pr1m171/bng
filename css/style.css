@@ -74,6 +74,13 @@ ul {
   color: #b59544;
   font-weight: bold; }
 
+.u-textBlue {
+  color: #2a3b4f;
+  font-weight: bold; }
+
+.u-textGsoft {
+  color: #cccccc; }
+
 .u-linkWhite {
   color: white; }
   .u-linkWhite:hover {
@@ -83,6 +90,26 @@ ul {
   color: #2a3b4f; }
   .u-linkBlue:hover {
     color: #bbccf1; }
+
+.u-dot {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 50%; }
+
+.u-dotOrg {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-color: #aa6400;
+  border-radius: 50%;
+  vertical-align: middle;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-top: 5px; }
 
 /* ====================================================
    Layout
@@ -198,6 +225,7 @@ ul {
       display: none; }
     .content .content-sidebar .sidebar-links {
       position: absolute;
+      display: none;
       top: 51px;
       left: 5%;
       background-color: #2a3b4f;
@@ -290,6 +318,77 @@ ul {
         padding: 5px;
         height: 100%;
         color: #bbccf1; }
+    .content .content-base .content-base-module .org .level {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      .content .content-base .content-base-module .org .level .level-two {
+        width: 49.86%;
+        display: inline-block; }
+      .content .content-base .content-base-module .org .level .level-four {
+        width: 24.8%;
+        display: inline-block; }
+    .content .content-base .content-base-module .org .item {
+      text-align: center;
+      margin: 0 auto; }
+      .content .content-base .content-base-module .org .item .item-photo {
+        display: block;
+        width: 60%;
+        position: relative;
+        margin: 0 auto; }
+        .content .content-base .content-base-module .org .item .item-photo .item-photoMain {
+          position: relative;
+          text-align: center;
+          margin: 15px 0; }
+          .content .content-base .content-base-module .org .item .item-photo .item-photoMain .photoMain-line {
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            z-index: -10;
+            background-color: #d3b468;
+            top: 30px;
+            left: 0%; }
+          .content .content-base .content-base-module .org .item .item-photo .item-photoMain img {
+            height: 65px;
+            width: 65px;
+            border: 3px solid #d3b468;
+            border-radius: 50%; }
+            .content .content-base .content-base-module .org .item .item-photo .item-photoMain img.photoMain-other {
+              border: 3px solid #bbccf1; }
+            .content .content-base .content-base-module .org .item .item-photo .item-photoMain img.photoMain-otherS {
+              border: 2px solid #bbccf1;
+              height: 40px;
+              width: 40px; }
+        .content .content-base .content-base-module .org .item .item-photo .item-photoSub {
+          position: absolute;
+          top: 15px; }
+          .content .content-base .content-base-module .org .item .item-photo .item-photoSub.item-photoSub--left {
+            left: 0; }
+          .content .content-base .content-base-module .org .item .item-photo .item-photoSub.item-photoSub--right {
+            right: 0; }
+      .content .content-base .content-base-module .org .item .item-desc h4 {
+        width: 100%;
+        margin: 0 auto; }
+        .content .content-base .content-base-module .org .item .item-desc h4.name-other {
+          font-size: 16px; }
+      .content .content-base .content-base-module .org .item .item-desc .item-desc-user {
+        margin: 0;
+        padding: 0; }
+      .content .content-base .content-base-module .org .item .item-desc .item-desc-category {
+        width: 70%;
+        margin: 0 auto;
+        vertical-align: middle; }
+        .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot {
+          background-color: green;
+          float: left; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.dot-other {
+            float: none; }
+        .content .content-base .content-base-module .org .item .item-desc .item-desc-category p {
+          display: inline-block;
+          margin: 0;
+          paddin: 0; }
+      .content .content-base .content-base-module .org .item.item--principal {
+        width: 250px; }
 
 /* 
    Login screen

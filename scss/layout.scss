@@ -167,6 +167,7 @@
 
 		.sidebar-links{
 			position: absolute;
+			display: none;
 			top: 51px;
 			left: 5%;
 			background-color: $blueDark;
@@ -293,6 +294,126 @@
 				color: $blueSoft;
 			}
 		}/*Content Foooter*/
+
+		.content-base-module{
+			
+			.org{
+
+
+				.level{
+					width: 100%;
+					padding: 0;
+					margin: 0;
+
+					.level-two{
+						width: 49.86%;
+						display: inline-block;
+					}
+
+					.level-four{
+						width: 24.8%;
+						display: inline-block;
+					}
+				}
+
+				.item{
+					text-align: center;
+					margin: 0 auto;
+
+					.item-photo{
+						display: block;
+						width: 60%;
+						position: relative;
+						margin: 0 auto;
+
+						.item-photoMain{
+							position: relative;
+							text-align: center;
+							margin: 15px 0;
+
+							.photoMain-line{
+								position: absolute;
+								height: 4px;
+								width: 100%;
+								z-index: -10;
+								background-color: $goldSoft;
+								top: 30px;
+								left: 0%;
+							}
+							img{
+								height: 65px;
+								width: 65px;
+								border: 3px solid $goldSoft;
+								border-radius: 50%;
+
+								&.photoMain-other{
+									border: 3px solid $blueSoft;
+								}
+
+								&.photoMain-otherS{
+									border: 2px solid $blueSoft;
+									height: 40px;
+									width: 40px;
+								}
+							}
+						}
+						.item-photoSub{
+							position: absolute;
+							top: 15px;
+
+							&.item-photoSub--left{
+								left: 0;
+							}
+							&.item-photoSub--right{
+								right: 0;
+							}
+						}
+					}//Photo
+
+					.item-desc{
+						h4{
+							width: 100%;
+							margin: 0 auto;
+
+							&.name-other{
+								font-size:16px;
+							}
+						}
+
+						.item-desc-user{
+							margin: 0;
+							padding: 0;
+						}
+
+						.item-desc-category{
+							width: 70%;
+							margin: 0 auto;
+							vertical-align: middle;
+
+							.u-dot{
+								background-color: green;
+								float: left;
+
+								&.dot-other{
+									float: none;
+								}
+							}
+
+							p{
+								display: inline-block;
+								margin:0;
+								paddin: 0;
+							}	
+						}
+					}
+
+					&.item--principal{
+						width: 250px;
+					}
+				}//item
+
+			}
+		}
 	}
 
 
