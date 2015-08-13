@@ -8,5 +8,20 @@
 
 	&:hover{
 		background-color: #b59544; //goldDark
+		color: rgb(42,59,79);//blueDark
+	}
+}
+
+.u-btnBlue{
+	background-color:rgb(42,59,79); //blue
+	padding: 10px 20px;
+	color: white;
+	border: none;
+	border-radius: 2em;
+	text-transform: uppercase;
+
+	&:hover{
+		background-color: rgba(42,59,79, 0.9); //goldDark
+		color: #d3b468;
 	}
 }
