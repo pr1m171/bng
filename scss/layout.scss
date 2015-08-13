@@ -171,6 +171,7 @@
 		.sidebar-icons{
 			width: 100%;
 			padding-top: 52px;
+			height: 100%;
 			background-color: rgba(0,0,0,0.2);
 			text-align: center;
 			border-right: 1px solid rgba(0,0,0,0.1);
@@ -229,13 +230,13 @@
 
 		.sidebar-links{
 			position: absolute;
-			display: none;
 			top: 51px;
 			left: 5%;
 			background-color: $blueDark;
 			font-size: 14px;
 			color: white;
 			width: 230px;
+			height: 92%;
 			z-index: 10000;
 
 			li{

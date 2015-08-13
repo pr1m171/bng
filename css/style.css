@@ -253,6 +253,7 @@ ul {
     .content .content-sidebar .sidebar-icons {
       width: 100%;
       padding-top: 52px;
+      height: 100%;
       background-color: rgba(0, 0, 0, 0.2);
       text-align: center;
       border-right: 1px solid rgba(0, 0, 0, 0.1); }
@@ -291,13 +292,13 @@ ul {
       display: none; }
     .content .content-sidebar .sidebar-links {
       position: absolute;
-      display: none;
       top: 51px;
       left: 5%;
       background-color: #2a3b4f;
       font-size: 14px;
       color: white;
       width: 230px;
+      height: 92%;
       z-index: 10000; }
       .content .content-sidebar .sidebar-links li {
         min-height: 40px;

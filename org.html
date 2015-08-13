@@ -62,11 +62,22 @@
 		<div class="content-sidebar">
 			<div class="sidebar-icons">
 				<ul>
-					<li><a href="#"><span class="icon-panel"></span></a></li>
-					<li><a href="#"><span class="icon-profile"></span></a></li>
-					<li><a href="#"><span class="icon-org"></span></a></li>
-					<li><a href="#"><span class="icon-promo"></span></a></li>	
-					<li><a href="#"><span class="icon-card"></span></a></li>
+					<li><a href="#" data-section="panel">
+						<span class="icon-panel"></span></a></li>
+					<li><a href="#" data-section="profile">
+						<span class="icon-profile"></span></a></li>
+					<li><a href="#" data-section="org">
+						<span class="icon-org"></span></a>
+						</li>
+					<li><a href="#" data-section="promo">
+						<span class="icon-promo"></span></a>
+							<ul data-list="promo">
+								<li>44</li>
+								<li>44</li>
+							</ul>
+						</li>	
+					<li><a href="#" data-section="card">
+						<span class="icon-card"></span></a></li>
 					<li><a href="#"><span class="icon-achieve"></span></a></li>	
 					<li><a href="#"><span class="icon-bonus"></span></a></li>
 					<li><a href="#"><span class="icon-van"></span></a></li>	
@@ -87,8 +98,8 @@
 							<li><a href="#">Mis directos</a></li>
 						</ul>
 					</li>
-					<li><h3>Promoción</h3>
-						<ul>
+					<li><h3 data-section="promo">Promoción</h3>
+						<ul data-list="promo">
 							<li><a href="#">01</a></li>
 							<li><a href="#">02</a></li>
 							<li><a href="#">03</a></li>
