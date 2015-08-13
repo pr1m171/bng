@@ -17,23 +17,33 @@
 	box-shadow: 0px 3px 10px rgba(0,0,0,0.05);
 
 	.navbar-header{
-		width: 50%;
+		width: 60%;
 		vertical-align: middle;
-	}
 
-	.navbar-brand{
-		color: rgba(0,0,0,0.3);
-		text-shadow: none;
-		font-weight: bold;
-		margin-left: 0px;
-		float: none;
-		display: inline-block;
-		padding: 15px 10px 10px 10px;
+		.header-logo{
+			font-size: 50px;
+			color: $goldDark;
+			margin: 0 10px 0 20px;
+			display: inline-block;
+			float: left;
+		}
+
+		.navbar-brand{
+			color: rgba(0,0,0,0.3);
+			text-shadow: none;
+			font-weight: bold;
+			margin-left: 0px;
+			display: inline-block;
+			padding: 0px;
+			margin-top: 15px;
+			height: auto;
+		}
+
+
 	}
-	
-	.header-logo{
-		height: 25px;
-		margin: 0 10px 0 20px;
+	.dropdown-toggle{
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 	.header-sidebtn{
@@ -240,7 +250,7 @@
 		.content-base-header{
 			margin-top: 50px;	
 			background-color: $goldDark;
-			padding: 0 15px;
+			padding: 0px 15px;
 			color: white;
 
 			a{
@@ -250,41 +260,42 @@
 
 			h3{
 				display: inline-block;
-				font-size: 18px;
+				font-size: 16px;
 				text-transform: uppercase;
+				letter-spacing: 0.5px;
 			}
 		}
 
 		.content-base-subheader{
 			background-color: #f7f7f7;
-			padding: 5 15px;
+			padding: 5px;
 			color: $blueDark;
 
 			a{
-				color: $blueDark;
 				font-size: 20px;
 			}
-
-			h3{
+			p{
 				display: inline-block;
-				font-size: 18px;
-				text-transform: uppercase;
 			}
-		}
+		}/*Content Subheader*/
+		
 		.content-base-footer{
-			background-color: $blueMiddle;
+			background-color: $blueDark;
 			position: absolute;
 			bottom: 0;
 			height: 40px;
-		}
+
+			.base-footer-module{
+				background-color: rgba(0,0,0,0.1);
+				margin: 0;
+				padding: 5px;
+				height: 100%;
+				color: $blueSoft;
+			}
+		}/*Content Foooter*/
 	}
 
 
-	.content-subHeader{
-		background-color: $softGrey;
-		width: 80%;
-		display: inline-block;
-	}
 }
 
 /* 

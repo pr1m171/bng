@@ -36,13 +36,20 @@ Base imported to layout
    Base
    =========================== */
 /*GENERAL FONTS*/
+[class^="icon-"] {
+  font-size: 20px;
+  margin: 0 5px;
+  padding: 0px;
+  display: inline-block; }
+
 html {
   height: 100%;
   width: 100%; }
 
 a {
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2a3b4f; }
   a:hover {
     text-decoration: none; }
 
@@ -62,6 +69,21 @@ ul {
   padding: 0;
   list-style: none; }
 
+/*Utilities*/
+.u-textGold {
+  color: #b59544;
+  font-weight: bold; }
+
+.u-linkWhite {
+  color: white; }
+  .u-linkWhite:hover {
+    color: #d3b468; }
+
+.u-linkBlue {
+  color: #2a3b4f; }
+  .u-linkBlue:hover {
+    color: #bbccf1; }
+
 /* ====================================================
    Layout
    ============================================================ */
@@ -76,19 +98,26 @@ ul {
   margin-bottom: 0px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); }
   .header .navbar-header {
-    width: 50%;
+    width: 60%;
     vertical-align: middle; }
-  .header .navbar-brand {
-    color: rgba(0, 0, 0, 0.3);
-    text-shadow: none;
-    font-weight: bold;
-    margin-left: 0px;
-    float: none;
-    display: inline-block;
-    padding: 15px 10px 10px 10px; }
-  .header .header-logo {
-    height: 25px;
-    margin: 0 10px 0 20px; }
+    .header .navbar-header .header-logo {
+      font-size: 50px;
+      color: #b59544;
+      margin: 0 10px 0 20px;
+      display: inline-block;
+      float: left; }
+    .header .navbar-header .navbar-brand {
+      color: rgba(0, 0, 0, 0.3);
+      text-shadow: none;
+      font-weight: bold;
+      margin-left: 0px;
+      display: inline-block;
+      padding: 0px;
+      margin-top: 15px;
+      height: auto; }
+  .header .dropdown-toggle {
+    padding-top: 10px;
+    padding-bottom: 10px; }
   .header .header-sidebtn {
     background-color: black;
     width: 20px;
@@ -223,42 +252,44 @@ ul {
     display: inline-block;
     float: right;
     height: 100vh;
-    position: relative; }
+    position: relative;
+    /*Content Subheader*/
+    /*Content Foooter*/ }
     .content .content-base .content-base-header, .content .content-base .content-base-subheader, .content .content-base .content-base-footer {
       width: 100%;
       display: inline-block; }
     .content .content-base .content-base-header {
       margin-top: 50px;
       background-color: #b59544;
-      padding: 0 15px;
+      padding: 0px 15px;
       color: white; }
       .content .content-base .content-base-header a {
         color: white;
         font-size: 20px; }
       .content .content-base .content-base-header h3 {
         display: inline-block;
-        font-size: 18px;
-        text-transform: uppercase; }
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px; }
     .content .content-base .content-base-subheader {
       background-color: #f7f7f7;
-      padding: 5 15px;
+      padding: 5px;
       color: #2a3b4f; }
       .content .content-base .content-base-subheader a {
-        color: #2a3b4f;
         font-size: 20px; }
-      .content .content-base .content-base-subheader h3 {
-        display: inline-block;
-        font-size: 18px;
-        text-transform: uppercase; }
+      .content .content-base .content-base-subheader p {
+        display: inline-block; }
     .content .content-base .content-base-footer {
-      background-color: #7f94b4;
+      background-color: #2a3b4f;
       position: absolute;
       bottom: 0;
       height: 40px; }
-  .content .content-subHeader {
-    background-color: #f2f2f2;
-    width: 80%;
-    display: inline-block; }
+      .content .content-base .content-base-footer .base-footer-module {
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 0;
+        padding: 5px;
+        height: 100%;
+        color: #bbccf1; }
 
 /* 
    Login screen

@@ -29,6 +29,13 @@ $desktop: 1200px;
 
 // Base
 
+[class^="icon-"]{
+	font-size: 20px;
+	margin: 0 5px;
+	padding: 0px;
+	display: inline-block;
+}
+
 html{
     height: 100%;
     width: 100%;
@@ -37,6 +44,7 @@ html{
 a{
 	cursor: pointer;
 	text-decoration: none;
+	color: $blueDark;
 
 	&:hover{
 		text-decoration: none;
@@ -60,4 +68,28 @@ ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+
+/*Utilities*/
+
+.u-textGold{
+	color: $goldDark;
+	font-weight: bold;
+}
+
+.u-linkWhite{
+	color: white;
+
+	&:hover{
+		color: $goldSoft;
+	}
+}
+
+.u-linkBlue{
+	color: $blueDark;
+
+	&:hover{
+		color: $blueSoft;
+	}
 }

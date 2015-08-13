@@ -3,13 +3,20 @@
    =========================== */
 /*GENERAL FONTS*/
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,300);
+[class^="icon-"] {
+  font-size: 20px;
+  margin: 0 5px;
+  padding: 0px;
+  display: inline-block; }
+
 html {
   height: 100%;
   width: 100%; }
 
 a {
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2a3b4f; }
   a:hover {
     text-decoration: none; }
 
@@ -28,5 +35,20 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+/*Utilities*/
+.u-textGold {
+  color: #b59544;
+  font-weight: bold; }
+
+.u-linkWhite {
+  color: white; }
+  .u-linkWhite:hover {
+    color: #d3b468; }
+
+.u-linkBlue {
+  color: #2a3b4f; }
+  .u-linkBlue:hover {
+    color: #bbccf1; }
 
 /*# sourceMappingURL=base.css.map */
