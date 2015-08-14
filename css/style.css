@@ -165,23 +165,41 @@ ul {
     padding-top: 10px;
     padding-bottom: 10px; }
   .header .header-sidebtn {
-    background-color: black;
-    width: 20px;
-    display: inline-block;
-    float: left;
-    margin: 0 10px;
-    height: 100%;
-    width: auto;
-    margin-top: 10px; }
-    .header .header-sidebtn span {
-      border-radius: 5px;
-      margin: 0;
-      padding: 0;
-      width: 20px;
-      height: 30px;
-      display: inline-block;
+    width: 34px;
+    cursor: pointer;
+    padding: 10px;
+    float: left; }
+    .header .header-sidebtn .burger-bar {
+      height: 4px;
       background-color: #2a3b4f;
-      float: left; }
+      margin-top: 4px;
+      width: 26px;
+      border-radius: 3px;
+      -webkit-transition: 0.3s ease-out;
+      -moz-transition: 0.3s ease-out;
+      -ms-transition: 0.3s ease-out;
+      -o-transition: 0.3s ease-out;
+      transition: 0.3s ease-out; }
+  .header .open .burger-bar:first-child {
+    -webkit-transform: rotate(405deg);
+    -moz-transform: rotate(405deg);
+    -ms-transform: rotate(405deg);
+    -o-transform: rotate(405deg);
+    transform: rotate(405deg);
+    margin-top: 14px; }
+  .header .open .burger-bar:last-child {
+    -webkit-transform: rotate(-405deg);
+    -moz-transform: rotate(-405deg);
+    -ms-transform: rotate(-405deg);
+    -o-transform: rotate(-405deg);
+    transform: rotate(-405deg);
+    margin-top: -14px; }
+  .header .open .middle {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0); }
   .header .dropdown a {
     color: #2a3b4f;
     text-shadow: none; }
@@ -261,12 +279,15 @@ ul {
         width: 100%;
         display: inline-block;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        vertical-align: middle; }
+        vertical-align: middle;
+        max-height: 45px;
+        overflow: hidden; }
         .content .content-sidebar .sidebar-icons li a {
           padding: 10px;
           vertical-align: middle;
           display: inline-block;
-          width: 100%; }
+          width: 100%;
+          height: 45px; }
           .content .content-sidebar .sidebar-icons li a:hover {
             background-color: rgba(0, 0, 0, 0.1); }
           .content .content-sidebar .sidebar-icons li a span {
@@ -298,36 +319,29 @@ ul {
       font-size: 14px;
       color: white;
       width: 230px;
-      height: 92%;
+      height: 93.5%;
       z-index: 10000; }
       .content .content-sidebar .sidebar-links li {
-        min-height: 40px;
+        min-height: 44px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         vertical-align: middle; }
-        .content .content-sidebar .sidebar-links li a {
-          color: white;
-          padding: 5px 10px;
+        .content .content-sidebar .sidebar-links li.active {
+          background-color: #d3b468; }
+        .content .content-sidebar .sidebar-links li a, .content .content-sidebar .sidebar-links li h3 {
+          cursor: pointer;
+          padding: 10px 0px 0px 10px;
           display: inline-block;
           vertical-align: middle;
-          cursor: pointer;
-          width: 100%; }
-          .content .content-sidebar .sidebar-links li a:hover {
+          font-size: 13px;
+          margin: 0;
+          width: 100%;
+          color: white;
+          height: 44px; }
+          .content .content-sidebar .sidebar-links li a:hover, .content .content-sidebar .sidebar-links li h3:hover {
             background-color: #d3b468;
             color: #2a3b4f;
             font-weight: bold;
-            height: 39px; }
-        .content .content-sidebar .sidebar-links li h3 {
-          display: inline-block;
-          width: 100%;
-          padding: 5px 10px;
-          font-size: 14px;
-          margin: 0;
-          height: 39px;
-          cursor: pointer; }
-          .content .content-sidebar .sidebar-links li h3:hover {
-            background-color: #d3b468;
-            color: #2a3b4f;
-            font-weight: bold; }
+            height: 44px; }
         .content .content-sidebar .sidebar-links li ul {
           background-color: rgba(0, 0, 0, 0.2);
           display: inline-block;
@@ -428,7 +442,11 @@ ul {
             height: 65px;
             width: 65px;
             border: 3px solid #d3b468;
-            border-radius: 50%; }
+            border-radius: 50%;
+            cursor: pointer; }
+            .content .content-base .content-base-module .org .item .item-photo .item-photoMain img:hover {
+              border: 2px solid #d3b468;
+              cursor: pointer; }
             .content .content-base .content-base-module .org .item .item-photo .item-photoMain img.photoMain-other {
               border: 3px solid #bbccf1; }
               .content .content-base .content-base-module .org .item .item-photo .item-photoMain img.photoMain-other:hover {

@@ -3,33 +3,32 @@ $(function(){
 
 	/*Events*/
 	openS();
-	sidebar();
 
 	function openS(){
 
 		$('.header-sidebtn').on('click', function(e){
 	        e.preventDefault();
 	        $('.sidebar-links').toggleClass('sidebar-off');
+	        $('.header-sidebtn').toggleClass('open');
 	     });
 	}
 
-	function sidebar(){
+	/*function sidebar(){
 
 		var $promo = $('[data-section="promo"]'),
 			$promolist = $('[data-list="promo"]'),
-			$profile = $('[data-section="profile"]');
 
 		$promo.click(function(){
-
+			
+			$promolist.slideUp();
 			if(!$promolist.is(":visible"))
 			{
 				$promolist.slideDown();
 			}
-
 		})
-	}
+	}*/
 
-	/*$(".sidebar-links h3").click(function(){
+	$(".sidebar-links h3").click(function(){
 		//slide up all the link lists
 		$(".sidebar-links ul ul").slideUp();
 		//slide down the link list below the h3 clicked - only if its closed
@@ -37,5 +36,5 @@ $(function(){
 		{
 			$(this).next().slideDown();
 		}
-	})*/
+	})
 })

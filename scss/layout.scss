@@ -48,28 +48,53 @@
 	}
 
 	.header-sidebtn{
-		
-		background-color: black;
-		width: 20px;
-		display: inline-block;
-		float: left;
-		margin: 0 10px;
-		height: 100%;
-		width: auto;
-		margin-top: 10px;
-
-
-		span{
-			border-radius: 5px;
-			margin: 0;
-			padding: 0;
-			width: 20px;
-			height: 30px;
-			display: inline-block;
-			background-color: $blueDark;
-			float: left;
+		width: 34px;
+  		cursor: pointer;
+  		padding: 10px;
+  		float: left;
+	
+		.burger-bar {
+		  height: 4px;
+		  background-color: $blueDark;
+		  margin-top: 4px;
+		  width: 26px;
+		  border-radius: 3px;
+		  -webkit-transition: 0.3s ease-out;
+		  -moz-transition: 0.3s ease-out;
+		  -ms-transition: 0.3s ease-out;
+		  -o-transition: 0.3s ease-out;
+		  transition: 0.3s ease-out;
 		}
 	}
+
+	.open{
+		.burger-bar:first-child {
+			-webkit-transform: rotate(405deg);
+			-moz-transform: rotate(405deg);
+			-ms-transform: rotate(405deg);
+			-o-transform: rotate(405deg);
+			transform: rotate(405deg);
+			margin-top: 14px;
+		}
+		.burger-bar:last-child {
+			-webkit-transform: rotate(-405deg);
+			-moz-transform: rotate(-405deg);
+			-ms-transform: rotate(-405deg);
+			-o-transform: rotate(-405deg);
+			transform: rotate(-405deg);
+			margin-top: -14px;
+		}
+
+		.middle {
+			-webkit-transform: scale(0);
+			-moz-transform: scale(0);
+			-ms-transform: scale(0);
+			-o-transform: scale(0);
+			transform: scale(0);
+		}
+	}
+
+
 	
 	.dropdown{
 		a{
@@ -181,12 +206,15 @@
 				display: inline-block;
 				border-bottom: 1px solid rgba(0,0,0,0.1);
 				vertical-align: middle;
+				max-height: 45px;
+				overflow: hidden;
 
 				a{
 					padding: 10px;
 					vertical-align: middle;
 					display: inline-block;
 					width: 100%;
+					height: 45px;
 
 					&:hover{
 						background-color: rgba(0,0,0,0.1);
@@ -236,45 +264,38 @@
 			font-size: 14px;
 			color: white;
 			width: 230px;
-			height: 92%;
+			height: 93.5%;
 			z-index: 10000;
 
 			li{
-				min-height: 40px;
+				min-height: 44px;
 				border-bottom: 1px solid rgba(0,0,0,0.1);
 				vertical-align: middle;
 
-				a{
-					color: white;
-					padding: 5px 10px; 	
+				&.active{
+					background-color: $goldSoft;
+				}
+
+				a, h3{
+					cursor: pointer;
+					padding: 10px 0px 0px 10px;
 					display: inline-block;
 					vertical-align: middle;
-					cursor: pointer;
-					width: 100%;
-
-					&:hover{
-						background-color: $goldSoft;
-						color: $blueDark;
-						font-weight: bold;
-						height: 39px;
-					}
-				}
-
-				h3{
-					display: inline-block;
-					width: 100%;
-					padding: 5px 10px; 	
-					font-size: 14px;
+					font-size: 13px;
 					margin: 0;
-					height: 39px;
-					cursor: pointer;
+					width: 100%;
+					color: white;
+					height: 44px;
 
 					&:hover{
 						background-color: $goldSoft;
 						color: $blueDark;
 						font-weight: bold;
+						height: 44px;
 					}
+
 				}
+
 
 				ul{
 					background-color: rgba(0,0,0,0.2);
@@ -418,6 +439,12 @@
 								width: 65px;
 								border: 3px solid $goldSoft;
 								border-radius: 50%;
+								cursor: pointer;
+
+								&:hover{
+									border: 2px solid $goldSoft;
+									cursor: pointer;
+								}
 
 								&.photoMain-other{
 									border: 3px solid $blueSoft;
