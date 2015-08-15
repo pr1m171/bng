@@ -7,7 +7,7 @@
 	<meta name="keyword" content="cardline, bng">
 	<meta name="description" content="CardLine - Oficina Virtual, Gestion de su cuenta">
 
-	<title>Template Base</title>
+	<title>Template Organización</title>
 
 	<!--Styles-->
 	<link href="css/normalize.css" rel="stylesheet">
@@ -27,7 +27,7 @@
     
     <div class="navbar-header">
     	
-    	<a href="#" class="header-sidebtn open" id="header-sidebtn">
+    	<a href="#" class="header-sidebtn" id="header-sidebtn">
   			<!--<span> </span>
   			<span> </span>
   			<span> </span>-->
@@ -95,9 +95,9 @@
 					<li><a href="#"><span class="icon-support"></span></a></li>			
 				</ul>
 			</div>
-			<div class="sidebar-links">
+			<div class="sidebar-links sidebar-off">
 				<ul>
-					<li class="active"><a href="#" class="select">Panel principal</a></li>
+					<li><a href="#" class="select">Panel principal</a></li>
 					<li><a href="#">Mi perfil</a></li>
 					<li><h3>Mi organizacion</h3>
 						<ul>
@@ -105,7 +105,7 @@
 							<li><a href="#">Mis directos</a></li>
 						</ul>
 					</li>
-					<li><h3 data-section="promo">Promoción</h3>
+					<li class="active"><h3 data-section="promo">Promoción</h3>
 						<ul>
 							<li><a href="#">01</a></li>
 							<li><a href="#">02</a></li>
@@ -133,11 +133,11 @@
 			</div><!--header-->
 
 			<div class="content-base-subheader">
-				<div class="subheader-index col-md-9">
+				<div class="subheader-index col-xs-9">
 					<span class="icon-profile"></span>
 					<p>Usuario activo: <span class="u-textGold">Usuario 01</span></p>
 				</div>
-				<div class="subheader-tools col-md-3">
+				<div class="subheader-tools col-xs-3">
 					<a href="#"><span class="icon-org-left pull-right"></span></a>
 					<a href="#"><span class="icon-org-top pull-right"></span></a>
 					<a href="#"><span class="icon-org-right pull-right"></span></a>
@@ -173,7 +173,9 @@
 						</div>
 					</div><!--Item principal -->
 
-					<div class="structure"></div>
+					<div class="structure">
+						<div class="structure-base"></div>
+					</div><!--structure-->
 					
 					<div class="level">
 						
@@ -186,7 +188,7 @@
 									</div>	
 								</div>
 								<div class="item-desc">
-									<h4 class="u-textBlue">Nombre Nombre Apellido Apellido</h4>
+									<h4 class="u-textBlue">Nombre Segundo Nivel Apellido</h4>
 									<p class="item-desc-user">usuario</p>
 									<div class="item-desc-category">
 										<span class="u-dot"></span>
@@ -206,7 +208,7 @@
 									
 								</div>
 								<div class="item-desc">
-									<h4 class="u-textBlue">Nombre Nombre Apellido Apellido</h4>
+									<h4 class="u-textBlue">Nombre Segundo Nivel Apellido</h4>
 									<p class="item-desc-user">usuario</p>
 									<div class="item-desc-category">
 										<span class="u-dot"></span>
@@ -221,8 +223,12 @@
 						
 					</div><!--level-->
 
-					<div class="structure1"></div>
-					<div class="structure1 pull-right"></div>
+					<div class="structure">
+						<div class="structure-base1"></div>
+						<div class="structure-base1"></div>
+					</div>
+
+					
 
 					<div class="level">
 						<div class="col-sm-3">
@@ -236,7 +242,7 @@
 									
 								</div>
 								<div class="item-desc">
-									<h4 class="u-textBlue name-other">Nombre Nombre Apellido Apellido</h4>
+									<h4 class="u-textBlue name-other">Nombre Nombre Tercer nivel</h4>
 									<div class="item-desc-category">
 										<span class="u-dot dot-other"></span>
 									</div>
@@ -272,7 +278,7 @@
 									
 								</div>
 								<div class="item-desc">
-									<h4 class="u-textBlue name-other">Nombre Nombre Apellido Apellido</h4>
+									<h4 class="u-textBlue name-other">Nombre Tercer Nivel</h4>
 									<div class="item-desc-category">
 										<span class="u-dot dot-other"></span>
 									</div>
@@ -289,7 +295,7 @@
 									
 								</div>
 								<div class="item-desc">
-									<h4 class="u-textBlue name-other">Nombre Nombre Apellido Apellido</h4>
+									<h4 class="u-textBlue name-other">Nombre Tercer Nivel</h4>
 									<div class="item-desc-category">
 										<span class="u-dot dot-other"></span>
 									</div>
@@ -302,13 +308,17 @@
 						
 					</div><!--level-->
 
-					<div class="structure2"></div>
-					<div class="structure2"></div>
-					<div class="structure2 pull-right"></div>
-					<div class="structure2 pull-right"></div>
+					<div class="structure">
+						<div class="structure-base2 hidden-xs"></div>
+						<div class="structure-base2 hidden-xs"></div>
+						<div class="structure-base2 hidden-xs"></div>
+						<div class="structure-base2 hidden-xs"></div>
+					</div>
 
-					<div class="level">
-						<div class="col-md-3">
+					
+
+					<div class="level hidden-xs">
+						<div class="col-sm-3">
 							<div class="item item--secondary">
 								<div class="item-photo">
 									
@@ -341,7 +351,7 @@
 							</div><!--Item principal -->	
 						</div><!--column-->
 						
-						<div class="col-md-3">
+						<div class="col-sm-3">
 							<div class="item item--secondary">
 								<div class="item-photo">
 									<div class="item-photoMain">
@@ -375,7 +385,7 @@
 							
 						</div><!--column-->
 
-						<div class="col-md-3">
+						<div class="col-sm-3">
 							<div class="item item--secondary">
 								<div class="item-photo">
 									<div class="item-photoMain">
@@ -406,7 +416,7 @@
 							</div><!--Item principal -->
 						</div><!--column-->
 
-						<div class="col-md-3">
+						<div class="col-sm-3">
 							<div class="item item--secondary">
 								<div class="item-photo">
 									<div class="item-photoMain">
@@ -453,10 +463,10 @@
 </div><!--container-->
 
 <div class="bottom-bar">
-	<div class="col-md-6 bottom-bar-module">
+	<div class="col-sm-6 col-xs-12 bottom-bar-module">
 		<a href="#" class="u-linkWhite"><span class="icon-org"></span>Ver árbol en su totalidad</a>
 		</div>
-		<div class="col-md-6 bottom-search">
+		<div class="col-sm-6 col-xs-12 bottom-search">
 			<form action="" class="bottom-search">
 				<input type="text" placeholder="Escriba el nombre del perfil que desea buscar">
 				<span class="glyphicon glyphicon-search"></span>

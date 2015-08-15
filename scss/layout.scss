@@ -20,12 +20,21 @@
 		width: 60%;
 		vertical-align: middle;
 
+		@media (max-width: $mobile) {
+			width: 100%;
+			text-align: center;
+		}
+
 		.header-logo{
 			font-size: 50px;
 			color: $goldDark;
 			margin: 0 10px 0 20px;
 			display: inline-block;
 			float: left;
+
+			@media (max-width: $mobile) {
+				margin: 0 10px;
+			}
 		}
 
 		.navbar-brand{
@@ -52,6 +61,10 @@
   		cursor: pointer;
   		padding: 10px;
   		float: left;
+
+  		@media(max-width: $tablet){
+			display: none;
+  		}
 	
 		.burger-bar {
 		  height: 4px;
@@ -107,6 +120,32 @@
 		}
 	}
 
+	.dropdown-menu{
+		background-color: $blueDark;
+		border: none;
+
+		li{
+			
+			&:hover{
+				background-color: rgba(0,0,0,0.2);
+			}
+
+			a{
+				color: $goldSoft;
+
+				&:hover{
+					background-color: rgba(0,0,0,0.2);
+				}
+			}
+			
+		}
+
+		.divider{
+			background-color: rgba(255,255,255,0.2);
+			height: 2px;
+		}
+	}
+
 	.open{
 
 		.dropdown-toggle{
@@ -131,16 +170,30 @@
 	display: block;
 	margin-left: 5%;
 
+	@media (max-width: $tablet) {
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+	}
+
 	.bottom-bar-module, .bottom-bar-moduleO{
 		margin: 0;
 		padding: 10px;
 		height: 100%;
 		color: $blueSoft;
 		display: inline-block;
+
+		@media (max-width: $tablet) {
+			text-align: center;
+		}
 	}
 
 	.bottom-bar-module{
 		background-color: rgba(0,0,0,0.1);
+
+		@media (max-width: $mobile) {
+			width: 100%;
+		}
 		
 	}
 	.bottom-search{
@@ -188,6 +241,10 @@
 		width: 5%;
 		display: inline-block;
 		height: 100vh;
+
+		@media (max-width: $desktop-s) {
+			width: 10%;
+		}
 
 		@media (max-width: $tablet) {
 			display: none;
@@ -330,6 +387,10 @@
 		overflow-x: hidden;
 		padding-bottom: 50px;
 
+		@media (max-width: $desktop-s) {
+			width: 90%;
+		}
+		
 		@media (max-width: $tablet) {
 			width: 100%;
 		}
@@ -345,6 +406,10 @@
 			padding: 10px 15px;
 			color: white;
 			vertical-align: middle;
+
+			@media (max-width: $mobile) {
+				padding: 10px;
+			}
 
 			a{
 				color: white;
@@ -372,7 +437,7 @@
 
 			.subheader-index{
 				vertical-align: middle;
-				padding-top: 10px;
+				padding: 10px;
 			}
 
 			.subheader-tools{
@@ -384,7 +449,6 @@
 				a{
 					vertical-align: middle;
 					text-align: center;
-					padding: 0 10px;
 					margin: 0 2px;
 					hwight: 100%;
 				}
@@ -404,37 +468,42 @@
 			
 			.org{
 
-				.structure{
-					width: 50%;
-					height: 40px;
-					margin: 1% 25% 0%;
-					display: inline-block;
-					border-top: 4px solid $softGrey;
-					border-left: 4px solid $softGrey;
-					border-right: 4px solid $softGrey;
-					padding: 0;
-				}
-				.structure1{
-					width: 24%;
-					height: 40px;
-					margin: 1% 12.5% 0%;
-					display: inline-block;
-					border-top: 4px solid $softGrey;
-					border-left: 4px solid $softGrey;
-					border-right: 4px solid $softGrey;
-					padding: 0;
+				@media (max-width: $tablet) {
+					padding: 0 0 50px 0;
 				}
 
-				.structure2{
-					width: 12%;
-					height: 20px;
-					margin: 1% 6% 0%;
-					display: inline-block;
-					border-top: 4px solid $softGrey;
-					border-left: 4px solid $softGrey;
-					border-right: 4px solid $softGrey;
-					padding: 0;
+				.structure{
+					width: 100%;
+					bacground-color: red;
+					display: flex;
+					justify-content: space-between;
+
+					.structure-base, .structure-base1, structure-base2{
+						border-top: 4px solid $softGrey;
+						border-left: 4px solid $softGrey;
+						border-right: 4px solid $softGrey;
+						display: inline-block;
+						padding: 0;
+						height: 40px;
+					}
+
+					.structure-base{
+						width: 50%;
+						margin: 1% 25% 0%;
+					}
+					.structure-base1{
+						width: 24%;
+						margin: 1% 12.5% 0%;
+					}
+
+					.structure-base2{
+						width: 12%;
+						height: 20px;
+						margin: 1% 6% 0%;
+					}
 				}
+
+				
 
 				.level{
 					width: 100%;
@@ -442,6 +511,7 @@
 					margin: 0;
 					display: flex;
 					//border-top: 1px solid #333;
+					justify-content: space-between;
 
 
 
@@ -536,9 +606,14 @@
 							margin: 0 auto;
 							vertical-align: middle;
 
+							@media (max-width: $mobile) {
+								width: 100%;
+							}
+
 							.u-dot{
 								background-color: green;
-								float: left;
+								display: inline-block;
+								
 
 								&.dot-other{
 									float: none;
@@ -548,13 +623,17 @@
 							p{
 								display: inline-block;
 								margin:0;
-								paddin: 0;
+								padding:0;
 							}	
 						}
 					}
 
 					&.item--principal{
 						max-width: 250px;
+
+						@media(max-width: $mobile){
+							width: 100%;
+						}
 					}
 					&.item--secondary{
 						width: 49%;
