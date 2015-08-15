@@ -361,10 +361,37 @@ ul {
         display: inline-block; }
     .content .content-base .content-base-module .general {
       padding: 10px 20px; }
+    .content .content-base .content-base-module .org .structure {
+      width: 50%;
+      height: 40px;
+      margin: 1% 25% 0%;
+      display: inline-block;
+      border-top: 4px solid #f2f2f2;
+      border-left: 4px solid #f2f2f2;
+      border-right: 4px solid #f2f2f2;
+      padding: 0; }
+    .content .content-base .content-base-module .org .structure1 {
+      width: 24%;
+      height: 40px;
+      margin: 1% 12.5% 0%;
+      display: inline-block;
+      border-top: 4px solid #f2f2f2;
+      border-left: 4px solid #f2f2f2;
+      border-right: 4px solid #f2f2f2;
+      padding: 0; }
+    .content .content-base .content-base-module .org .structure2 {
+      width: 12%;
+      height: 20px;
+      margin: 1% 6% 0%;
+      display: inline-block;
+      border-top: 4px solid #f2f2f2;
+      border-left: 4px solid #f2f2f2;
+      border-right: 4px solid #f2f2f2;
+      padding: 0; }
     .content .content-base .content-base-module .org .level {
       width: 100%;
       padding: 0;
-      margin: 20px 0 0 0;
+      margin: 0;
       display: flex; }
     .content .content-base .content-base-module .org .item {
       text-align: center;
