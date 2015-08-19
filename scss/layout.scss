@@ -95,7 +95,7 @@
 			-ms-transform: rotate(-405deg);
 			-o-transform: rotate(-405deg);
 			transform: rotate(-405deg);
-			margin-top: -14px;
+			margin-top: -12px;
 		}
 
 		.middle {
@@ -321,7 +321,7 @@
 			font-size: 14px;
 			color: white;
 			width: 230px;
-			height: 93.5%;
+			height: 93%;
 			z-index: 10000;
 
 			li{
@@ -463,7 +463,12 @@
 		.content-base-module{
 
 			.general{
-				padding: 10px 20px;
+				padding: 20px;
+
+				@media (max-width: $tablet) {
+					padding: 20px 20px 50px 20px;
+					text-align: center;
+				}
 			}
 			
 			.org{
@@ -478,7 +483,7 @@
 					display: flex;
 					justify-content: space-between;
 
-					.structure-base, .structure-base1, structure-base2{
+					.structure-base, .structure-base1, .structure-base2{
 						border-top: 4px solid $softGrey;
 						border-left: 4px solid $softGrey;
 						border-right: 4px solid $softGrey;
@@ -494,6 +499,11 @@
 					.structure-base1{
 						width: 24%;
 						margin: 1% 12.5% 0%;
+
+						@media (max-width:$tablet) {
+							width: 25%;
+							margin: 1% 10% 0% 15%;
+						}
 					}
 
 					.structure-base2{
@@ -520,6 +530,7 @@
 				.item{
 					text-align: center;
 					margin: 0 auto;
+					font-size: 20px;
 
 					.item-photo{
 						display: block;
@@ -542,8 +553,8 @@
 								left: 0%;
 							}
 							img{
-								height: 65px;
-								width: 65px;
+								height: 3.25em;
+								width: 3.25em;;
 								border: 3px solid $goldSoft;
 								border-radius: 50%;
 								cursor: pointer;
@@ -564,8 +575,8 @@
 
 								&.photoMain-otherS{
 									border: 2px solid $blueSoft;
-									height: 40px;
-									width: 40px;
+									height: 2em;
+									width: 2em;
 
 									&:hover{
 										border: 1px solid $blueDark;
@@ -585,11 +596,19 @@
 								right: 0;
 							}
 						}
+
+						.u-dotOrg{
+							height: 2.4em;
+							width: 2.4em;
+						}
+
 					}//Photo
 
 					.item-desc{
+
 						h4{
 							margin: 0 auto;
+							font-size: 0.9em;
 
 							&.name-other{
 								font-size:13px;
@@ -599,6 +618,7 @@
 						.item-desc-user{
 							margin: 0;
 							padding: 0;
+							font-size: 0.7em;
 						}
 
 						.item-desc-category{
@@ -624,12 +644,14 @@
 								display: inline-block;
 								margin:0;
 								padding:0;
+								font-size: 0.8em;
 							}	
 						}
 					}
 
 					&.item--principal{
 						max-width: 250px;
+						margin: 0 auto;
 
 						@media(max-width: $mobile){
 							width: 100%;
@@ -637,8 +659,29 @@
 					}
 					&.item--secondary{
 						width: 49%;
-						magin: 0;
+						margin: 0;
 						display: inline-block;
+
+						@media (max-width: $desktop-s) {
+							width: 48%;
+						}
+					}
+
+					&.item--pro{
+						font-size: 25px;
+						max-width: 370px;
+
+
+						.item-photoMain{
+
+							.photoMain-line{
+								top: 35px;
+							}
+						}
+
+						.item-photoSub{
+							top: 20px;
+						}	
 					}
 
 				}//item

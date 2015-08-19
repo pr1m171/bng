@@ -111,8 +111,8 @@ ul{
 	border-radius:50%;
 }
 .u-dotOrg{
-	height: 30px;
-	width: 30px;
+	//height: 30px;
+	//width: 30px;
 	display: inline-block;
 	background-color: $brown;
 	border-radius:50%;
@@ -122,4 +122,8 @@ ul{
 	font-weight: bold;
 	letter-spacing: 0.5px;
 	padding-top: 5px;
+}
+.u-borderBottom{
+	border-bottom: solid 1px $softGrey;
+	padding-bottom: 20px;
 }
