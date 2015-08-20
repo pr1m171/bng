@@ -3,6 +3,7 @@ $(function(){
 
 	/*Events*/
 	openS();
+	users_hover();
 
 	function openS(){
 
@@ -11,6 +12,26 @@ $(function(){
 	        $('.sidebar-links').toggleClass('sidebar-off');
 	        $('.header-sidebtn').toggleClass('open');
 	     });
+	}
+
+	function users_hover(){
+
+		$('body').on('mouseover click','.item-photo',function(){
+			$(this).find('.photoMain-links').show().stop().animate({ opacity:'1'  }, { duration: 300, queue: false });
+		});
+
+		$('body').on('mouseover click','.item-photo',function(){
+			$(this).find('.photoMain-links-s').show().stop().animate({ opacity:'1'  }, { duration: 300, queue: false });
+		});
+
+		$('body').on('mouseleave','.item-photo',function(){
+			$(this).find('.photoMain-links').show().stop().animate({ opacity:'0'  }, { duration: 300, queue: false });
+		});
+
+		$('body').on('mouseleave','.item-photo',function(){
+			$(this).find('.photoMain-links-s').show().stop().animate({ opacity:'0'  }, { duration: 300, queue: false });
+		});
+
 	}
 
 	/*function sidebar(){

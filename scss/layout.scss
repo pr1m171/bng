@@ -538,10 +538,19 @@
 						position: relative;
 						margin: 0 auto;
 
+						@media(max-width: $tablet){
+							width: 80%;
+						}
+
+						@media(max-width: $mobile){
+							width: 100%;
+						}
+
 						.item-photoMain{
 							position: relative;
 							text-align: center;
 							margin: 15px 0;
+
 
 							.photoMain-line{
 								position: absolute;
@@ -552,12 +561,110 @@
 								top: 30px;
 								left: 0%;
 							}
+
+							.photoMain-links{
+								z-index: 100;
+								top: 15px;
+								position: absolute;
+
+								background-color: $blueSoft;
+								border-radius: 50%;
+								padding: 5px;
+								opacity: 0;
+
+								&:hover{
+									color: white;
+								}
+
+							}
+	
+							.photoMain-links-s{
+								z-index: 100;
+								top: 5px;
+								position: absolute;
+								height: 35px;
+								width: 35px;
+
+								background-color: $blueSoft;
+								border-radius: 50%;
+								opacity: 0;
+
+								&:hover{
+									color: white;
+								}
+								span{
+									font-size: 14px;
+								}
+							}
+
+							.photoMain-links-left{	
+								left: 30%;
+
+								@media(max-width: $desktop-s){
+									left: 25%;
+								}
+
+								@media(max-width: $tablet){
+									left: 10%;
+								}
+								@media(max-width: $mobile){
+									left: 10%;
+								}
+							}
+
+							.photoMain-links-s-left{	
+								left: 20%;
+
+								@media(max-width: $desktop-s){
+									left: 15%;
+								}
+
+								@media(max-width: $tablet){
+									left: 5%;
+								}
+								@media(max-width: $mobile){
+									left: 0%;
+								}
+							}
+							.photoMain-links-right{
+								right: 30%;
+
+								@media(max-width: $desktop-s){
+									right: 25%;
+								}
+
+								@media(max-width: $tablet){
+									right: 10%;
+								}
+
+								@media(max-width: $mobile){
+									right: 5%;
+								}
+							}
+							.photoMain-links-s-right{
+								right: 20%;
+
+								@media(max-width: $desktop-s){
+									right: 15%;
+								}
+
+								@media(max-width: $tablet){
+									right: 5%;
+								}
+
+								@media(max-width: $mobile){
+									right: 0%;
+								}
+							}
+
 							img{
 								height: 3.25em;
 								width: 3.25em;;
 								border: 3px solid $goldSoft;
 								border-radius: 50%;
 								cursor: pointer;
+								margin: 0;
+								padding: 0;
 
 								&:hover{
 									border: 2px solid $goldSoft;
