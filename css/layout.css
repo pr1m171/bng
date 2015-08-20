@@ -256,11 +256,12 @@ ul {
         display: none; } }
     .content .content-sidebar .sidebar-icons {
       width: 100%;
-      padding-top: 52px;
+      padding-top: 51px;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.2);
       text-align: center;
-      border-right: 1px solid rgba(0, 0, 0, 0.1); }
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
       .content .content-sidebar .sidebar-icons li {
         min-height: 44px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -280,11 +281,16 @@ ul {
             color: #2a3b4f;
             font-weight: bold;
             height: 44px; }
+          .content .content-sidebar .sidebar-icons li a.active, .content .content-sidebar .sidebar-icons li h3.active {
+            background-color: #d3b468;
+            color: #2a3b4f; }
+            .content .content-sidebar .sidebar-icons li a.active span, .content .content-sidebar .sidebar-icons li h3.active span {
+              color: #2a3b4f; }
           .content .content-sidebar .sidebar-icons li a span, .content .content-sidebar .sidebar-icons li h3 span {
             color: white;
             font-size: 20px; }
             .content .content-sidebar .sidebar-icons li a span:hover, .content .content-sidebar .sidebar-icons li h3 span:hover {
-              color: #d3b468; }
+              color: #2a3b4f; }
         .content .content-sidebar .sidebar-icons li ul {
           background-color: rgba(0, 0, 0, 0.2);
           display: inline-block;
@@ -310,13 +316,12 @@ ul {
       color: white;
       width: 230px;
       height: 93%;
-      z-index: 10000; }
+      z-index: 10000;
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
       .content .content-sidebar .sidebar-links li {
         min-height: 44px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         vertical-align: middle; }
-        .content .content-sidebar .sidebar-links li.active {
-          background-color: #d3b468; }
         .content .content-sidebar .sidebar-links li a, .content .content-sidebar .sidebar-links li h3 {
           cursor: pointer;
           padding: 10px 0px 0px 10px;
@@ -332,6 +337,9 @@ ul {
             color: #2a3b4f;
             font-weight: bold;
             height: 44px; }
+          .content .content-sidebar .sidebar-links li a.active, .content .content-sidebar .sidebar-links li h3.active {
+            background-color: #d3b468;
+            color: #2a3b4f; }
         .content .content-sidebar .sidebar-links li ul {
           background-color: rgba(0, 0, 0, 0.2);
           display: inline-block;

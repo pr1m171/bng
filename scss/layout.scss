@@ -252,11 +252,12 @@
 
 		.sidebar-icons{
 			width: 100%;
-			padding-top: 52px;
+			padding-top: 51px;
 			height: 100%;
 			background-color: rgba(0,0,0,0.2);
 			text-align: center;
 			border-right: 1px solid rgba(0,0,0,0.1);
+			border-top: 1px solid rgba(0,0,0,0.1);
 
 			li{
 				min-height: 44px;
@@ -281,12 +282,21 @@
 						height: 44px;
 					}
 
+					&.active{
+						background-color: $goldSoft;
+						color: $blueDark;
+
+						span{
+							color: $blueDark;
+						}
+					}
+
 					span{
 						color: white;
 						font-size: 20px;
 
 						&:hover{
-							color: $goldSoft;
+							color: $blueDark;
 						}
 					}
 				}
@@ -327,15 +337,13 @@
 			width: 230px;
 			height: 93%;
 			z-index: 10000;
+			border-top: 1px solid rgba(0,0,0,0.1);
 
 			li{
 				min-height: 44px;
 				border-bottom: 1px solid rgba(0,0,0,0.1);
 				vertical-align: middle;
 
-				&.active{
-					background-color: $goldSoft;
-				}
 
 				a, h3{
 					cursor: pointer;
@@ -355,6 +363,10 @@
 						height: 44px;
 					}
 
+					&.active{
+						background-color: $goldSoft;
+						color: $blueDark;
+					}
 				}
 
 
