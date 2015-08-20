@@ -262,24 +262,28 @@ ul {
       text-align: center;
       border-right: 1px solid rgba(0, 0, 0, 0.1); }
       .content .content-sidebar .sidebar-icons li {
-        width: 100%;
-        display: inline-block;
+        min-height: 44px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        vertical-align: middle;
-        max-height: 45px;
-        overflow: hidden; }
-        .content .content-sidebar .sidebar-icons li a {
-          padding: 10px;
-          vertical-align: middle;
+        vertical-align: middle; }
+        .content .content-sidebar .sidebar-icons li a, .content .content-sidebar .sidebar-icons li h3 {
+          cursor: pointer;
+          padding: 10px 0px 0px 10px;
           display: inline-block;
+          vertical-align: middle;
+          font-size: 13px;
+          margin: 0;
           width: 100%;
-          height: 45px; }
-          .content .content-sidebar .sidebar-icons li a:hover {
-            background-color: rgba(0, 0, 0, 0.1); }
-          .content .content-sidebar .sidebar-icons li a span {
+          color: white;
+          height: 44px; }
+          .content .content-sidebar .sidebar-icons li a:hover, .content .content-sidebar .sidebar-icons li h3:hover {
+            background-color: #d3b468;
+            color: #2a3b4f;
+            font-weight: bold;
+            height: 44px; }
+          .content .content-sidebar .sidebar-icons li a span, .content .content-sidebar .sidebar-icons li h3 span {
             color: white;
             font-size: 20px; }
-            .content .content-sidebar .sidebar-icons li a span:hover {
+            .content .content-sidebar .sidebar-icons li a span:hover, .content .content-sidebar .sidebar-icons li h3 span:hover {
               color: #d3b468; }
         .content .content-sidebar .sidebar-icons li ul {
           background-color: rgba(0, 0, 0, 0.2);

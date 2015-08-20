@@ -4,6 +4,7 @@ $(function(){
 	/*Events*/
 	openS();
 	users_hover();
+	sidebar_drop();
 
 	function openS(){
 
@@ -34,27 +35,29 @@ $(function(){
 
 	}
 
-	/*function sidebar(){
 
-		var $promo = $('[data-section="promo"]'),
-			$promolist = $('[data-list="promo"]'),
+	function sidebar_drop(e){
 
-		$promo.click(function(){
-			
-			$promolist.slideUp();
-			if(!$promolist.is(":visible"))
+		$(".sidebar-links h3, .sidebar-icons h3").click(function(){
+			$(".sidebar-links ul ul").slideUp();
+			$(".sidebar-icons ul ul").slideUp();
+
+			if(!$(".sidebar-links h3, .sidebar-icons h3").next().is(":visible"))
 			{
-				$promolist.slideDown();
+				$(".sidebar-links h3, .sidebar-icons h3").next().slideDown();
 			}
-		})
-	}*/
 
-	$(".sidebar-links h3").click(function(){
+
+		});
+
+	}
+
+	/*$(".sidebar-links h3").click(function(){
 		$(".sidebar-links ul ul").slideUp();
 
 		if(!$(this).next().is(":visible"))
 		{
 			$(this).next().slideDown();
 		}
-	})
+	})*/
 })
