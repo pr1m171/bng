@@ -473,6 +473,40 @@
 					padding: 20px 20px 50px 20px;
 					text-align: center;
 				}
+
+				.dashboard-module{
+					width: 100%;
+					border: 1px solid $softGrey;
+					padding: 0;
+					margin-bottom: 15px;
+
+					.dashboard-moduleTitle{
+						width: 100%;
+						padding: 10px 15px;
+						display: inline-block;
+					}
+
+					.dashboard-moduleContent{
+						padding: 5px 15px;
+						display: inline-block;
+						margin: 0;
+
+					}
+				}
+
+				.dashboard-module-blue{
+					.dashboard-moduleTitle{
+						background-color: $blueDark;
+						color: white;
+					}
+				}
+
+				.dashboard-module-gold{
+					.dashboard-moduleTitle{
+						background-color: $goldSoft;
+						color: $blueDark;
+					}
+				}
 			}
 			
 			.org{
