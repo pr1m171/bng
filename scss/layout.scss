@@ -34,6 +34,8 @@
 
 			@media (max-width: $mobile) {
 				margin: 0 10px;
+				font-size: 40px;
+				margin-top: 5px;
 			}
 		}
 
@@ -665,7 +667,7 @@
 									left: 5%;
 								}
 								@media(max-width: $mobile){
-									left: 0%;
+									left: -25%;
 								}
 							}
 							.photoMain-links-right{
@@ -695,7 +697,7 @@
 								}
 
 								@media(max-width: $mobile){
-									right: 0%;
+									right: -25%;
 								}
 							}
 
