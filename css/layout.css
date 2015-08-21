@@ -118,17 +118,11 @@ ul {
       padding: 0px;
       margin-top: 15px;
       height: auto; }
-  .header .dropdown-toggle {
-    padding-top: 10px;
-    padding-bottom: 10px; }
   .header .header-sidebtn {
     width: 34px;
     cursor: pointer;
     padding: 10px;
     float: left; }
-    @media (max-width: 768px) {
-      .header .header-sidebtn {
-        display: none; } }
     .header .header-sidebtn .burger-bar {
       height: 4px;
       background-color: #2a3b4f;

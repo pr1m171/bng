@@ -51,20 +51,12 @@
 
 
 	}
-	.dropdown-toggle{
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
 
 	.header-sidebtn{
 		width: 34px;
   		cursor: pointer;
   		padding: 10px;
   		float: left;
-
-  		@media(max-width: $tablet){
-			display: none;
-  		}
 	
 		.burger-bar {
 		  height: 4px;
@@ -939,6 +931,7 @@
 		}
 	}
 }
+
 
 
 

@@ -66,6 +66,11 @@ $(function(){
 
 	}
 
+	/*
+	  Slidemenu
+	*/
+
+
 	/*$(".sidebar-links h3").click(function(){
 		$(".sidebar-links ul ul").slideUp();
 
