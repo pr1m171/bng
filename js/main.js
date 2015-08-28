@@ -5,6 +5,7 @@ $(function(){
 	openS();
 	users_hover();
 	sidebar_drop();
+	$('[data-toggle="tooltip"]').tooltip();
 
 	function openS(){
 

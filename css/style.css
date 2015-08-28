@@ -272,6 +272,10 @@ ul {
       width: 100%;
       color: rgba(255, 255, 255, 0.8);
       padding: 5px 15px; }
+      @media (max-width: 480px) {
+        .bottom-bar .bottom-search input {
+          padding: 5px 10px;
+          font-size: 12px; } }
     .bottom-bar .bottom-search span {
       position: absolute;
       color: white;
@@ -282,6 +286,9 @@ ul {
       cursor: pointer; }
       .bottom-bar .bottom-search span:hover {
         color: white; }
+      @media (max-width: 480px) {
+        .bottom-bar .bottom-search span {
+          right: 10px; } }
 
 /*Content Foooter*/
 /* 
@@ -524,8 +531,9 @@ ul {
       justify-content: space-between; }
     .content .content-base .content-base-module .org .item {
       text-align: center;
-      margin: 0 auto;
-      font-size: 20px; }
+      margin: 0;
+      font-size: 20px;
+      width: 100%; }
       .content .content-base .content-base-module .org .item .item-photo {
         display: block;
         width: 60%;
@@ -666,10 +674,37 @@ ul {
           .content .content-base .content-base-module .org .item .item-desc .item-desc-category {
             width: 100%; } }
         .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot {
-          background-color: green;
+          background-color: #2a3b4f;
           display: inline-block; }
           .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.dot-other {
             float: none; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.black {
+            background-color: black; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.grey70 {
+            background-color: rgba(0, 0, 0, 0.7); }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.grey40 {
+            background-color: rgba(0, 0, 0, 0.4); }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.grey20 {
+            background-color: rgba(0, 0, 0, 0.2); }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.white {
+            border: 2px solid #ccc;
+            background-color: #fff; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.gold {
+            background-color: #d3b468; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.ruby {
+            background-color: #a22430; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.saphire {
+            background-color: #336699; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.esmerald {
+            background-color: #339933; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.silver {
+            background-color: #e2e2e2; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.bronze {
+            background-color: #aa6400; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.diamond {
+            background-color: #bfdce8; }
+          .content .content-base .content-base-module .org .item .item-desc .item-desc-category .u-dot.other-cat {
+            background-color: #2a3b4f; }
         .content .content-base .content-base-module .org .item .item-desc .item-desc-category p {
           display: inline-block;
           margin: 0;

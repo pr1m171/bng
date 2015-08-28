@@ -203,6 +203,11 @@
 			width: 100%;
 			color: rgba(255,255,255,0.8);
 			padding: 5px 15px;
+
+			@media (max-width: $mobile) {
+				padding: 5px 10px;
+				font-size: 12px;
+			}
 		}
 
 		span{
@@ -216,6 +221,10 @@
 
 			&:hover{
 				color: white;
+			}
+			
+			@media (max-width: $mobile) {
+				right: 10px;
 			}
 		}
 	}
@@ -573,8 +582,9 @@
 
 				.item{
 					text-align: center;
-					margin: 0 auto;
+					margin: 0;
 					font-size: 20px;
+					width: 100%;
 
 					.item-photo{
 						display: block;
@@ -782,13 +792,55 @@
 							}
 
 							.u-dot{
-								background-color: green;
+								background-color: $blueDark;
 								display: inline-block;
-								
 
 								&.dot-other{
 									float: none;
 								}
+
+								&.black{
+									background-color: black;
+								}
+								&.grey70{
+									background-color: rgba(0,0,0,0.7);
+								}
+								&.grey40{
+									background-color: rgba(0,0,0,0.4);
+								}
+								&.grey20{
+									background-color: rgba(0,0,0,0.2);
+								}
+								&.white{
+									border: 2px solid #ccc;
+									background-color: #fff;
+								}
+								&.gold{
+									background-color: $goldSoft;
+								}
+								&.ruby{
+									background-color: #a22430;
+								}
+								&.saphire{
+									background-color: #336699;
+								}
+								&.esmerald{
+									background-color: #339933;
+								}
+								&.silver{
+									background-color: #e2e2e2;
+								}
+								&.bronze{
+									background-color: $brown;
+								}
+								&.diamond{
+									background-color: rgb(191,220,232);
+								}
+								&.other-cat{
+									background-color: $blueDark;
+								}
+
+
 							}
 
 							p{
