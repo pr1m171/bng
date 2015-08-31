@@ -10,7 +10,7 @@
 
 .header{
 	width: 100%;
-	z-index: 1000;
+	z-index: 100000;
 	background-color: $goldSoft;
 	color: $blueDark;
 	margin-bottom:0px;
@@ -332,13 +332,13 @@
 
 		.sidebar-links{
 			position: absolute;
-			top: 51px;
+			top: 55px;
 			left: 5%;
 			background-color: $blueDark;
 			font-size: 14px;
 			color: white;
 			width: 230px;
-			height: 93%;
+			height: 92%;
 			z-index: 10000;
 			border-top: 1px solid rgba(0,0,0,0.1);
 
@@ -404,7 +404,7 @@
 		position: relative;
 		overflow-y: scroll;
 		overflow-x: hidden;
-		padding-bottom: 50px;
+		padding: 150px 0px 50px 0px;
 
 		@media (max-width: $desktop-s) {
 			width: 90%;
@@ -415,8 +415,9 @@
 		}
 
 		.content-base-header, .content-base-subheader{
-			width: 100%;
-			display: inline-block;
+			width: 95%;
+			position: fixed;
+			z-index: 1000;
 		}
 
 		.content-base-header{
@@ -425,6 +426,7 @@
 			padding: 10px 15px;
 			color: white;
 			vertical-align: middle;
+			top: 0px;
 
 			@media (max-width: $mobile) {
 				padding: 10px;
@@ -453,6 +455,7 @@
 			background-color: #f7f7f7;
 			color: $blueDark;
 			height: 50px;
+			top: 100px;
 
 			.subheader-index{
 				vertical-align: middle;
@@ -839,7 +842,6 @@
 								&.other-cat{
 									background-color: $blueDark;
 								}
-
 
 							}
 

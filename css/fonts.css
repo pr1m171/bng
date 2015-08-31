@@ -23,6 +23,30 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-noregister:before {
+	content: "\e63e";
+}
+.icon-openposition:before {
+	content: "\e63f";
+}
+.icon-preregister:before {
+	content: "\e640";
+}
+.icon-vacated:before {
+	content: "\e641";
+}
+.icon-customer:before {
+	content: "\e642";
+}
+.icon-diamond:before {
+	content: "\e643";
+}
+.icon-distributor:before {
+	content: "\e644";
+}
+.icon-gold:before {
+	content: "\e645";
+}
 .icon-org-left:before {
 	content: "\e63b";
 }
@@ -56,7 +80,7 @@
 .icon-card:before {
 	content: "\e61f";
 }
-.icon-direct:before {
+.icon-icon-direct:before {
 	content: "\e620";
 }
 .icon-edit:before {
@@ -156,7 +180,7 @@
 .icon-coin-euro:before {
 	content: "\e603";
 }
-.icon-coin-pound:before 
+.icon-coin-pound:before {
 	content: "\e604";
 }
 .icon-coin-yen:before {
