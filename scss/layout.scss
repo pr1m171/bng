@@ -164,6 +164,11 @@
 	display: block;
 	margin-left: 5%;
 
+	@media (max-width: $desktop-s) {
+		width: 90%;
+		margin-left: 10%;
+	}
+
 	@media (max-width: $tablet) {
 		width: 100%;
 		height: auto;
@@ -342,6 +347,10 @@
 			z-index: 10000;
 			border-top: 1px solid rgba(0,0,0,0.1);
 
+			@media (max-width:$desktop-s) {
+				left: 10%;
+			}
+
 			li{
 				min-height: 44px;
 				border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -418,6 +427,14 @@
 			width: 95%;
 			position: fixed;
 			z-index: 1000;
+
+			@media(max-width: $desktop-s){
+				width: 90%;
+			}
+
+			@media(max-width: $tablet){
+				width: 100%;
+			}
 		}
 
 		.content-base-header{
@@ -485,10 +502,14 @@
 		.content-base-module{
 
 			.general{
-				padding: 20px;
+				padding: 20px 50px 20px 20px;
+
+				@media (max-width: $desktop-s) {
+					padding: 20px 20px 50px 20px;
+				}
 
 				@media (max-width: $tablet) {
-					padding: 20px 20px 50px 20px;
+					padding: 20px 20px 100px 20px;
 					text-align: center;
 				}
 
@@ -523,14 +544,28 @@
 					.dashboard-moduleTitle{
 						background-color: $goldSoft;
 						color: $blueDark;
+						border: none;
 					}
+				}
+
+				.table_header{
+					background-color: $goldSoft;
+					color: $blueDark;
+					font-size: 17px;
+					text-align: center;
+				}
+				.table_header01{
+					background-color: $blueDark;
+					color: white;
+					font-size: 16px;
 				}
 			}
 			
 			.org{
+				padding: 0 0 50px 0;
 
 				@media (max-width: $tablet) {
-					padding: 0 0 50px 0;
+					padding: 0 0 80px 0;
 				}
 
 				.structure{
@@ -673,7 +708,7 @@
 								left: 20%;
 
 								@media(max-width: $desktop-s){
-									left: 15%;
+									left: 5%;
 								}
 
 								@media(max-width: $tablet){
@@ -702,7 +737,7 @@
 								right: 20%;
 
 								@media(max-width: $desktop-s){
-									right: 15%;
+									right: 5%;
 								}
 
 								@media(max-width: $tablet){
@@ -914,6 +949,13 @@
 		width: 30%;
 		margin: 100px auto 50px;
 		text-align: center;
+
+		@media(max-width: $tablet){
+			width: 80%;
+		}
+		@media(max-width: $mobile){
+			width: 90%;
+		}
 	}
 
 	.login-top{
