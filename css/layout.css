@@ -259,7 +259,7 @@ ul {
         display: none; } }
     .content .content-sidebar .sidebar-icons {
       width: 100%;
-      padding-top: 51px;
+      padding-top: 54px;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.2);
       text-align: center;
@@ -312,7 +312,7 @@ ul {
       display: none; }
     .content .content-sidebar .sidebar-links {
       position: absolute;
-      top: 55px;
+      top: 54px;
       left: 5%;
       background-color: #2a3b4f;
       font-size: 14px;
